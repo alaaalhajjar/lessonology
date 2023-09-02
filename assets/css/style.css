@@ -1,0 +1,609 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+}
+
+body {
+    direction: rtl;
+}
+
+/*--------Start navbar syle-----*/
+
+.navbar {
+    background-color: #9A314F;
+    height: 100px;
+    padding: 10px;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white;
+}
+.navbar .navbar-toggler i{
+    color: white;
+    border-color: none;
+}
+
+.navbar .navbar-toggler i:focus{
+    box-shadow: none;
+}
+
+.logo {
+    margin-right: 0 !important;
+}
+.collapse .navbar-nav .nav-item a{
+    position: relative;
+    font-size: 14px;
+    color: #F1F1F1;
+}
+.collapse .navbar-nav .nav-item a:active{
+    color: white;
+    font-weight: bold;
+    content:"";
+    display: block;
+    width: 24px;
+    height: 3px;    
+    position: absolute;
+    top: 50;
+    right:40;
+    background-color: #EF8348;
+    }
+
+
+.navbar .navbar-nav .nav-link .active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: #EF8348;
+}
+.left-nav   img{
+    height: 24px;
+    width: 24px;
+}
+.left-nav button {
+    padding: 2px;
+    border-radius: 8px;
+    background-color: #EF8348;
+    color: white;
+    height: 56px;
+    width: 128px;
+    outline: none;
+    font-size: 18px;
+    font-weight:bold;
+    border: 0;
+}
+/*-------- End navbar syle-----*/
+
+/* Start Second part style */
+.right-section {
+    line-height: 2.5;
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-position: 100PX 40px;
+    background-color: #9A314F
+}
+
+.right-section p {
+    color: #E4E4E4;
+    font-weight: 500;
+    padding-top: 50px;
+}
+
+.right-section h2 {
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.5;
+    width: 510px;
+}
+
+.right-section span {
+    display: block;
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.right-section button {
+    width: 210px;
+    height: 48px;
+    border-radius: 8px;
+    background: #EF8348;
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 3rem;
+    border: 0;
+}
+/* Start Second part style */
+/* Start third part style */
+.third-part {
+    background-color: #f5f5f5;
+    padding-top: 70px;
+    line-height: 2;
+    padding-bottom: 70px;
+}
+
+.third-part .first h2 {
+    color: #245D51;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.third-part .first span {
+    color: #EF8348;
+}
+
+.third-part .first p {
+    color: #676666;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.third-part .card-image {
+    width: 65px;
+    height: 65px;
+    background-color: #EF8348;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.third-part .card-image img{
+ object-fit: contain;
+}
+
+.third-part .cards {
+    height: 100%;
+    border-radius: 16px;
+    background: #FAFAFA;
+    padding: 20px 38px;
+
+}
+
+.third-part .cards:hover {
+    background: rgba(239, 131, 72, 0.16);
+}
+
+.third-part .cards h3 {
+    padding-top: 2rem;
+    color: #245D51;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.third-part .cards p {
+    color: #525252;
+    font-size: 14px;
+}
+
+/* End third part style */
+/* start fourth part */
+.fourth-part {
+    background-color: #245D51;
+    padding-top: 1rem;
+}
+
+.fourth-part .first-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fourth-part .first-section p {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.fourth-part .first-section a {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+.fourth-part .single-card {
+    border-radius: 16px;
+    background-color: white;
+    margin-bottom: 20px;
+    height: 100%;
+
+}
+
+.fourth-part .single-card .image {
+  
+    border-radius: 16px 16px 0px 0px;
+    margin-bottom: 15px;
+
+
+}
+
+.fourth-part .single-card .image img {
+    object-fit: contain;
+    width: 100%;
+}
+
+.fourth-part .single-card h4 {
+    color: #313131;
+    text-align: right;
+    font-size: 24px;
+    margin-right: 10px;
+    margin-top: 20px;
+    width: 237px;
+}
+
+.fourth-part .single-card p {
+    color: #6D6D6D;
+    text-align: right;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.fourth-part .single-card .name {
+    color: #EF8348;
+    text-align: right;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.fourth-part .single-card .stars {
+    color: #FFB800;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.fourth-part .single-card .stars span {
+    color: #878787;
+    font-family: Poppins;
+    font-size: 8px;
+    font-weight: 400;
+}
+
+.fourth-part .person-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #EF8348;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.fourth-part .person-icon svg {
+    margin: auto;
+}
+
+
+.fourth-part .person {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.fourth-part .person .inline {
+    display: flex;
+}
+
+.fourth-part .person span {
+    color: #313131;
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 8px;
+    padding-right: 8px;
+}
+
+.fourth-part .person .free {
+    color: #EF8348;
+    margin-top: 5px;
+}
+
+/* end fourth part */
+
+/* start fifth part */
+.fifth-section{
+    margin-bottom: 50px;
+}
+.fifth-section .first h2,
+span {
+    color: #245D51;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.fifth-section .first span {
+    color: #EF8348;
+}
+
+.fifth-section .first p {
+    color: #676666;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.fifth-section .all-card {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fifth-section .single-card {
+    height: auto;
+    border-radius: 16px;
+    background: #FCFCFC;
+    position: relative;
+    padding-bottom: 70px;
+}
+
+.fifth-section .single-card .quote {
+    padding: 56px 20px 0 20px;
+    position: relative;
+}
+
+.fifth-section .single-card .quote p {
+    color: #313131;
+    font-size: 20px;
+    text-align: right;
+}
+
+
+.fifth-section .single-card .quote::before {
+    content: url('../images/right-quote.svg');
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top:24px;
+    right: 20px;
+
+}
+
+.fifth-section .single-card .quote::after {
+    content: url('../images/left-quote.svg');
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    bottom: 0;
+    left: 24px;
+}
+
+.fifth-section .single-card img {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+.fifth-section .single-card .profile {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+
+}
+
+.fifth-section .single-card h5 {
+    color: #22264A;
+    font-size: 14px;
+    margin-bottom: 0 !important;
+}
+
+.fifth-section .name p {
+    color: #808080;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.fifth-section .name {
+    padding-top: 10px;
+    margin-right: 10px;
+}
+
+.fifth-section .single-card .profile .stars {
+    margin-right: 80px;
+    margin-top:8px;
+  
+}
+
+.fifth-section .single-card .profile .stars i {
+    width: 16px;
+    height: 16px;
+    color: #FFB800;
+
+}
+/* end fifth part */
+
+/* Footer */
+
+.footer-tag {
+    background-color: #245D51;
+}
+
+.footer-tag ul li {
+    color: white;
+}
+
+#main_footer p{
+    font-size: 30px;
+    color: #ffffff;
+    padding-right: 50px;
+    font-weight: 700;
+    position: relative;
+}
+#main_footer p::after{
+    content:"";
+    display: block;
+    width: 80px;
+    height: 3px;    
+    position: absolute;
+    top: 50;
+    right: 50;
+    background-color: #EF8348;
+}
+
+#main_footer .tag ul li a {
+    display: block;
+    text-decoration: none;
+    margin: 10px 0;
+    line-height: 1.5;
+    color: #D3D3D3;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#main_footer .tag ul li a:hover {
+    color: #979797;
+}
+
+
+footer hr {
+    width: 90%;
+    height: 3px;
+    color: white;
+    margin-right: 5%;
+}
+
+footer .footer_sub {
+    justify-content: space-between;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    margin: 0 55px;
+
+}
+
+footer .footer_sub p {
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+}
+
+footer .footer_sub .icons {
+    justify-content: left;
+}
+
+footer .footer_sub .icons i {
+    width: 30px;
+    height: 30px;
+}
+
+
+@media (max-width: 991px) {
+    .left-nav .search-icon {
+        display: none;
+    }
+
+    .left-nav button {
+        background-color: #245D51;
+        border: none;
+        outline: none;
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    .right-section {
+        width: 100%;
+        text-align: center;
+        background-image: none;
+    }
+
+    .right-section p {
+        font-size: 14px;
+    }
+
+    .right-section p,
+    .right-section h2,
+    .right-section span {
+        text-align: center;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .third-part {
+        padding-top: 50px;
+        line-height: 2;
+    }
+
+    .third-part .single-card {}
+
+    .third-part .first h2 {
+        font-size: 24px;
+    }
+
+    .third-part .first p {
+        font-size: 16px;
+    }
+
+    .fourth-part .first-section {
+        justify-content: center;
+    }
+
+    .fourth-part .first-section a {
+        display: none;
+    }
+
+    .fourth-part .first-section p {
+        padding-top: 15px;
+        font-size: 20px;
+    }
+
+    .fifth-section .single-card,
+    .fourth-part .single-card,
+    .fourth-part .single-card .image {
+        width: 270px;
+    }
+
+    .fourth-part .single-card h4 {
+        margin-top: 0px;
+    }
+    .fifth-section .single-card .quote p {
+        font-size: 18px;
+    }
+    .fifth-section .single-card,
+    .fourth-part .single-card {
+        align-items: center;
+        margin: auto;
+    }
+
+    .fifth-section .single-card .quote {
+        font-size: 10px;
+    }
+
+    .fourth-part .first-section span {
+        display: none;
+    }
+
+
+    .seconed-part .right-section span {
+        font-size: 20px;
+    }
+
+    .fifth-section .first h2,
+    span {
+        font-size: 24px;
+    }
+
+    .fifth-section .first p {
+        font-size: 16px;
+    }
+
+    footer .footer_sub {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #main_footer p{
+        font-size: 20px;
+    }
+    footer .footer_sub p {
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .fifth-section .single-card .profile .stars {
+        margin-right: 20px;
+    } 
+
+}
