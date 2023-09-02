@@ -1,3 +1,6 @@
+:root{
+
+}
 * {
     box-sizing: border-box;
     font-family: 'Tajawal', sans-serif;
@@ -5,6 +8,7 @@
 
 body {
     direction: rtl;
+    background-color: #f5f5f5;
 }
 
 /*--------Start navbar syle-----*/
@@ -32,27 +36,31 @@ body {
 }
 .collapse .navbar-nav .nav-item a{
     position: relative;
-    font-size: 14px;
+    font-size: 16px;
     color: #F1F1F1;
 }
-.collapse .navbar-nav .nav-item a:active{
-    color: white;
+.collapse .navbar-nav .nav-item:active a{
+    color: #fff;
     font-weight: bold;
-    content:"";
-    display: block;
-    width: 24px;
-    height: 3px;    
-    position: absolute;
-    top: 50;
-    right:40;
-    background-color: #EF8348;
     }
-
+    .collapse .navbar-nav .nav-item-page:active a::after{
+        content:"";
+        display: block;
+        width: 24px;
+        height: 4px;    
+        position: absolute;
+        top: 50;
+        right: 40%;
+        background-color: #EF8348;
+    }
+    .collapse .navbar-nav .nav-item .dropdown-item{
+        color: #000;
+    }
 
 .navbar .navbar-nav .nav-link .active,
 .navbar .navbar-nav .nav-link:focus,
 .navbar .navbar-nav .nav-link:hover {
-    color: #EF8348;
+ color: #E16F3D; 
 }
 .left-nav   img{
     height: 24px;
@@ -70,18 +78,23 @@ body {
     font-weight:bold;
     border: 0;
 }
+.left-nav button:hover{
+    background-color: #C54C17;
+
+}
 /*-------- End navbar syle-----*/
 
 /* Start Second part style */
 .right-section {
-    line-height: 2.5;
-    background-image: url("../images/background.png");
+    background-image: url("../images/bg.png");
     background-repeat: no-repeat;
-    background-position: 100PX 40px;
+    position: relative;
+    bottom: 0%;
+    /* background-position: 100PX 40px; */
     background-color: #9A314F
 }
 
-.right-section p {
+.right-section .first-p {
     color: #E4E4E4;
     font-weight: 500;
     padding-top: 50px;
@@ -93,11 +106,19 @@ body {
     font-weight: 800;
     line-height: 1.5;
     width: 510px;
+    margin-top: 16px;
+    line-height: 1.8;
+    margin-bottom: 24px;
 }
-
+.right-section .main-p{
+    color: #E0DFDF;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
 .right-section span {
     display: block;
     color: #FFF;
+    margin-top: 16px;
     font-size: 32px;
     font-weight: 700;
 }
@@ -149,7 +170,7 @@ body {
     margin: auto;
 }
 .third-part .card-image img{
- object-fit: contain;
+    object-fit: contain;
 }
 
 .third-part .cards {
@@ -179,7 +200,6 @@ body {
 /* End third part style */
 /* start fourth part */
 .fourth-part {
-    background-color: #245D51;
     padding-top: 1rem;
 }
 
@@ -416,17 +436,21 @@ span {
 /* Footer */
 
 .footer-tag {
-    background-color: #245D51;
+    background-color: #9A314F;
+}
+.footer-flex{
+    display: flex;
 }
 
 .footer-tag ul li {
     color: white;
 }
-
+#main_footer{
+ margin-right: 60px;
+}
 #main_footer p{
     font-size: 30px;
-    color: #ffffff;
-    padding-right: 50px;
+    color: hsl(0, 0%, 100%);
     font-weight: 700;
     position: relative;
 }
@@ -452,7 +476,7 @@ span {
 }
 
 #main_footer .tag ul li a:hover {
-    color: #979797;
+    color: #E16F3D;
 }
 
 
@@ -460,7 +484,7 @@ footer hr {
     width: 90%;
     height: 3px;
     color: white;
-    margin-right: 5%;
+    margin-right:6%;
 }
 
 footer .footer_sub {
@@ -468,7 +492,7 @@ footer .footer_sub {
     font-size: 14px;
     color: white;
     display: flex;
-    margin: 0 55px;
+    margin: 0 75px;
 
 }
 
