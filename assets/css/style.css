@@ -75,28 +75,29 @@ body {
     color: #fff;
     font-weight: bold;
     }
-.collapse .navbar-nav .nav-item-page a:active::after{
+    .collapse .navbar-nav .nav-item-page a:focus::after{
         content:"";
         display: block;
-        width: 24px;
-        height: 4px;    
+        width: 26px;
+        height: 4px;
         position: absolute;
         top: 50;
         right: 40%;
         background-color: #EF8348;
+        border-radius:2px ;
     }
     .collapse .navbar-nav .nav-item .dropdown-item{
         color: #000;
         text-align: right;
         padding: 10px;
-        background-color: #fcfcfc;
+        background-color: #FCFCFC;
     }
-
-.navbar .navbar-nav .nav-link .active,
-.navbar .navbar-nav .nav-link:focus,
-.navbar .navbar-nav .nav-link:hover
- {
- color: #E16F3D; 
+.navbar .navbar-nav .nav-item-page :focus{
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    top: -7px;
 }
 .left-nav   img{
     height: 24px;
@@ -174,12 +175,17 @@ body {
     line-height: 1.8;
     margin-bottom: 24px;
 }
+.right-section .langSpan{
+color:#E16F3D;
+font-size: 40px;
+}
+
 .right-section .main-p{
     color: #E0DFDF;
     margin-top: 16px;
     margin-bottom: 24px;
 }
-.right-section span {
+.right-section .name{
     display: block;
     color: #FFF;
     margin-top: 16px;
@@ -206,13 +212,15 @@ body {
 }
 
 .third-part .first h2 {
-    color: #245D51;
+    color: #2c2c2c;
     font-size: 48px;
     font-weight: 700;
 }
 
 .third-part .first span {
     color: #EF8348;
+    font-size: 48px;
+    font-weight: 700;
 }
 
 .third-part .first p {
@@ -249,14 +257,14 @@ body {
 
 .third-part .cards h3 {
     padding-top: 2rem;
-    color: #245D51;
+    color: #2c2c2c;
     font-size: 24px;
     font-weight: 700;
 }
 
 .third-part .cards p {
-    color: #525252;
-    font-size: 14px;
+    color: #676666;
+    font-size: 16px;
 }
 
 /* End third part style */
@@ -565,10 +573,8 @@ span {
 
 
 footer hr {
-    width: 90%;
     height: 3px;
     color: white;
-    margin-right:6%;
 }
 
 footer .footer_sub {
@@ -576,7 +582,6 @@ footer .footer_sub {
     font-size: 14px;
     color: white;
     display: flex;
-    margin: 0 75px;
 
 }
 
