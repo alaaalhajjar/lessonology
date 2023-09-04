@@ -108,7 +108,7 @@ body {
 }
 .left-nav button {
     border-radius: 8px;
-    background-color: #EF8348;
+    background-color: #E16F3D;
     color: white;
     height: 56px;
     width: 128px;
@@ -120,7 +120,8 @@ body {
 }
 
 .left-nav button:hover,
-.right-section button:hover 
+.right-section button:hover,
+.seven-part .text button:hover
 {
     background-color: #C54C17;
 
@@ -285,7 +286,7 @@ font-size: 40px;
 }
 
 .fourth-part .first-section p {
-    color: black;
+    color: #2c2c2c;
     font-size: 32px;
     font-weight:medium;
 }
@@ -417,40 +418,40 @@ font-size: 40px;
 }
 
 /* end fourth part */
-/* Start third part style */
-.six-part {
-    padding-top: 100px;
-    line-height: 2;
+
+/* Start five part style */
+.five-part {
 }
 
-.six-part .first h2 {
+.five-part .first h2 {
     color: #2c2c2c;
-    font-size: 48px;
+    font-size: 32px;
     font-weight: 700;
 }
 
-.six-part .first span {
+.five-part .first span {
     color: #EF8348;
-    font-size: 48px;
+    font-size: 32px;
     font-weight: 700;
 }
 
-.six-part .first p {
+.five-part .first p {
     color: #676666;
     font-size: 24px;
     font-weight: 500;
 }
 
-.six-part .cards {
+.five-part .cards {
     height: 294px;
-    width: 384px;
     border-radius: 16px;
-    background: #fcfcfc;
-    padding: 10px 60px;
-
+    background: #fff;
+    padding: 10px 40px;
+    border-radius: 16px;
+    margin: auto;
+    border: 1px solid #F3F3F3;
 }
 
-.six-part .card-image {
+.five-part .card-image {
     width: 150px;
     height: 150px;
     display: flex;
@@ -458,28 +459,337 @@ font-size: 40px;
     align-items: center;
     margin: auto;
 }
-.six-part .card-image img{
+.five-part .card-image img{
     object-fit: contain;
 }
 
 
-.six-part .cards:hover {
-    background: rgba(239, 131, 72, 0.16);
-}
+.five-part .cards:hover {
+    background:#9A314F14.8%}
 
-.six-part .cards h3 {
-    padding-top: 2rem;
+.five-part .cards h3 {
+    padding-top: 16px;
     color: #E16F3D;
     font-size: 18px;
     font-weight: 700;
 }
 
-.six-part .cards p {
+.five-part .cards p {
     color: #313131;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* End five part style */
+/* start six part */
+.six-part {
+}
+
+.six-part .first-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.six-part .first-section p {
+    color: #2c2c2c;
+    font-size: 32px;
+    font-weight:medium;
+}
+
+.six-part .first-section a {
+    color: #7E7E7E;
+    font-size: 20px;
+    font-weight:medium;
+    text-decoration: none;
+}
+
+
+.six-part .single-card {
+    border-radius: 16px;
+    background-color: #fcfcfc;
+    height: 100%;
+    position: relative;
+}
+
+.six-part .single-card .image {
+    border-radius: 16px 16px 0px 0px;
+    margin-bottom: 15px;
+}
+
+.six-part .single-card .image img {
+    object-fit: contain;
+    width: 100%;
+}
+.six-part .single-card .favorite-icon{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 16px;
+    right:10px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.six-part .single-card .favorite-icon img{
+
+    width: 16px;
+    height: 16px;
+}
+
+
+.six-part .single-card h4 {
+    color: #313131;
+    text-align: right;
+    font-size: 24px;
+    margin-right: 10px;
+    margin-top: 20px;
+    width: 237px;
+}
+
+.six-part .single-card p {
+    color: #6D6D6D;
+    text-align: right;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.six-part .single-card .name {
+    color: #EF8348;
+    text-align: right;
+    font-weight: 700;
     font-size: 16px;
 }
 
-/* End third part style */
+.six-part .single-card .stars {
+    color: #FFB800;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.six-part .single-card .stars span {
+    color: #878787;
+    font-family: Poppins;
+    font-size: 8px;
+    font-weight: 400;
+}
+
+.six-part .person-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #EF8348;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.six-part .person-icon svg {
+    margin: auto;
+}
+
+
+.six-part .person {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.six-part .person .inline {
+    display: flex;
+}
+
+.six-part .person span {
+    color: #313131;
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 8px;
+    padding-right: 8px;
+}
+
+.six-part .person .free {
+    color: #EF8348;
+    margin-top: 5px;
+}
+
+/* end six part */
+/* Start seven part style */
+.seven-part{
+    background-color: #fcfcfc;
+    padding: 80px 0;
+    position: relative;
+}
+.seven-part .sectionImage{
+    background-color: #9A314F;
+    border-radius: 16px;
+}
+.seven-part .text{
+    position: absolute;
+    top: 218px;
+    left: 300px;
+}
+.seven-part .text h3{
+    color: #FCFCFC;
+    font-size: 32px;
+    font-weight: 800;
+}
+.seven-part .text p{
+    padding-top: 16px;
+    color: #FCFCFC;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+.seven-part .text button{
+    width: 158px;
+height: 56px;
+flex-shrink: 0;
+border-radius: 8px;
+background: #E16F3D;
+color: #fff;
+font-size: 16px;
+font-weight: 700;
+border: none;
+margin-top:40px;
+}
+/* End seven part style */
+/* start six part */
+
+.eight-part .first-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.eight-part .first-section p {
+    color: #2c2c2c;
+    font-size: 32px;
+    font-weight:medium;
+}
+
+.eight-part .first-section a {
+    color: #7E7E7E;
+    font-size: 20px;
+    font-weight:medium;
+    text-decoration: none;
+}
+
+
+.eight-part .single-card {
+    border-radius: 16px;
+    background-color: #fcfcfc;
+    height: 100%;
+    position: relative;
+}
+
+.eight-part .single-card .image {
+    border-radius: 16px 16px 0px 0px;
+    margin-bottom: 15px;
+}
+
+.eight-part .single-card .image img {
+    object-fit: contain;
+    width: 100%;
+}
+.eight-part .single-card .favorite-icon{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 16px;
+    right:10px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.eight-part .single-card .favorite-icon img{
+
+    width: 16px;
+    height: 16px;
+}
+
+
+.eight-part .single-card h4 {
+    color: #313131;
+    text-align: right;
+    font-size: 24px;
+    margin-right: 10px;
+    margin-top: 20px;
+    width: 237px;
+}
+
+.eight-part .single-card p {
+    color: #6D6D6D;
+    text-align: right;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.eight-part .single-card .name {
+    color: #EF8348;
+    text-align: right;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.eight-part .single-card .stars {
+    color: #FFB800;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.eight-part .single-card .stars span {
+    color: #878787;
+    font-family: Poppins;
+    font-size: 8px;
+    font-weight: 400;
+}
+
+.eight-part .person-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #EF8348;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.eight-part .person-icon svg {
+    margin: auto;
+}
+
+
+.eight-part .person {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.eight-part .person .inline {
+    display: flex;
+}
+
+.eight-part .person span {
+    color: #313131;
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 8px;
+    padding-right: 8px;
+}
+
+.eight-part .person .free {
+    color: #EF8348;
+    margin-top: 5px;
+}
+
+/* end six part */
+
 /* start fifth part */
 .fifth-section{
     margin-bottom: 50px;
@@ -591,6 +901,39 @@ span {
 
 }
 /* end fifth part */
+/* Start btn part */
+.btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.btn .moveBtn{
+    width: 60px;
+height: 60px;
+border-radius: 50%;
+background: #9A314F;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+   #moveBtn{
+   
+transform: rotate(360deg);
+   }
+   .whatsBtn
+{
+    margin: 15px 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #29A71A;
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+
+   /* end btn part */
 
 /* Footer */
 
