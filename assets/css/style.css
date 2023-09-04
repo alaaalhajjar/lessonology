@@ -71,7 +71,7 @@ body {
     font-size: 16px;
     color: #F1F1F1;
 }
-.collapse .navbar-nav .nav-item:active a{
+.collapse .navbar-nav .nav-item :active a{
     color: #fff;
     font-weight: bold;
     }
@@ -85,6 +85,9 @@ body {
         right: 40%;
         background-color: #EF8348;
         border-radius:2px ;
+    }
+    .collapse .navbar-nav .nav-item a:hover{
+        color: #EF8348;
     }
     .collapse .navbar-nav .nav-item .dropdown-item{
         color: #000;
@@ -134,6 +137,9 @@ body {
     width: 320px;
     height: 48px;
     padding: 15px;
+    transition-timing-function: ease-in-out;
+
+
 }
 #search-box input:focus{
     border: none;
@@ -270,7 +276,7 @@ font-size: 40px;
 /* End third part style */
 /* start fourth part */
 .fourth-part {
-    margin-top: 120x;
+    padding-top: 120x;
 }
 
 .fourth-part .first-section {
@@ -295,7 +301,6 @@ font-size: 40px;
 .fourth-part .single-card {
     border-radius: 16px;
     background-color: #fcfcfc;
-    margin-bottom: 20px;
     height: 100%;
     position: relative;
 
@@ -412,7 +417,69 @@ font-size: 40px;
 }
 
 /* end fourth part */
+/* Start third part style */
+.six-part {
+    padding-top: 100px;
+    line-height: 2;
+}
 
+.six-part .first h2 {
+    color: #2c2c2c;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.six-part .first span {
+    color: #EF8348;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.six-part .first p {
+    color: #676666;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.six-part .cards {
+    height: 294px;
+    width: 384px;
+    border-radius: 16px;
+    background: #fcfcfc;
+    padding: 10px 60px;
+
+}
+
+.six-part .card-image {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.six-part .card-image img{
+    object-fit: contain;
+}
+
+
+.six-part .cards:hover {
+    background: rgba(239, 131, 72, 0.16);
+}
+
+.six-part .cards h3 {
+    padding-top: 2rem;
+    color: #E16F3D;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.six-part .cards p {
+    color: #313131;
+    font-size: 16px;
+}
+
+/* End third part style */
 /* start fifth part */
 .fifth-section{
     margin-bottom: 50px;
