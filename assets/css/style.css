@@ -1,6 +1,4 @@
-:root{
 
-}
 * {
     box-sizing: border-box;
     font-family: 'Tajawal', sans-serif;
@@ -255,6 +253,7 @@ font-size: 40px;
     border-radius: 16px;
     background: #fcfcfc;
     padding: 20px 38px;
+    margin: auto;
 
 }
 
@@ -341,13 +340,21 @@ font-size: 40px;
     left:-10px;
 }
 
+.fourth-part .single-card .text{
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 500;
+    position: absolute;
+    top: 24px;
+    left:18px;
+    z-index: 110;
+}
 .fourth-part .single-card h4 {
     color: #313131;
     text-align: right;
     font-size: 24px;
     margin-right: 10px;
     margin-top: 20px;
-    width: 237px;
 }
 
 .fourth-part .single-card p {
@@ -420,8 +427,6 @@ font-size: 40px;
 /* end fourth part */
 
 /* Start five part style */
-.five-part {
-}
 
 .five-part .first h2 {
     color: #2c2c2c;
@@ -482,8 +487,7 @@ font-size: 40px;
 
 /* End five part style */
 /* start six part */
-.six-part {
-}
+
 
 .six-part .first-section {
     display: flex;
@@ -619,17 +623,22 @@ font-size: 40px;
 /* Start seven part style */
 .seven-part{
     background-color: #fcfcfc;
-    padding: 80px 0;
     position: relative;
 }
 .seven-part .sectionImage{
     background-color: #9A314F;
     border-radius: 16px;
+    margin: 80px 0;
+
+}
+.seven-part .sectionImage img{
+    object-fit: contain;
+    width: 100%;
 }
 .seven-part .text{
     position: absolute;
-    top: 218px;
-    left: 300px;
+    top: 150px;
+    left:20%;
 }
 .seven-part .text h3{
     color: #FCFCFC;
@@ -753,7 +762,7 @@ margin-top:40px;
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    background-color: #EF8348;
+    background-color: #E16F3D;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -783,40 +792,42 @@ margin-top:40px;
     padding-right: 8px;
 }
 
-.eight-part .person .free {
-    color: #EF8348;
+.eight-part .person .price{
+    color: #E16F3D;
+    font-size: 16px;
+    font-weight: 700;
     margin-top: 5px;
 }
 
 /* end six part */
 
-/* start fifth part */
-.fifth-section{
+/* start last part */
+.last-section{
     margin-bottom: 50px;
 }
-.fifth-section .first h2,
+.last-section .first h2,
 span {
-    color: #245D51;
+    color: #2c2c2c;
     font-size: 32px;
     font-weight: 700;
 }
 
-.fifth-section .first span {
+.last-section .first span {
     color: #EF8348;
 }
 
-.fifth-section .first p {
+.last-section .first p {
     color: #676666;
     font-size: 24px;
     font-weight: 500;
 }
 
-.fifth-section .all-card {
+.last-section .all-card {
     display: flex;
     justify-content: space-around;
 }
 
-.fifth-section .single-card {
+.last-section .single-card {
     height: auto;
     border-radius: 16px;
     background: #FCFCFC;
@@ -824,19 +835,19 @@ span {
     padding-bottom: 70px;
 }
 
-.fifth-section .single-card .quote {
+.last-section .single-card .quote {
     padding: 56px 20px 0 20px;
     position: relative;
 }
 
-.fifth-section .single-card .quote p {
+.last-section .single-card .quote p {
     color: #313131;
     font-size: 20px;
     text-align: right;
 }
 
 
-.fifth-section .single-card .quote::before {
+.last-section .single-card .quote::before {
     content: url('../images/right-quote.svg');
     display: block;
     width: 24px;
@@ -847,7 +858,7 @@ span {
 
 }
 
-.fifth-section .single-card .quote::after {
+.last-section .single-card .quote::after {
     content: url('../images/left-quote.svg');
     display: block;
     width: 24px;
@@ -857,13 +868,13 @@ span {
     left: 24px;
 }
 
-.fifth-section .single-card img {
+.last-section .single-card img {
     width: 46px;
     height: 46px;
     border-radius: 50%;
 }
 
-.fifth-section .single-card .profile {
+.last-section .single-card .profile {
     display: flex;
     position: absolute;
     bottom: 0;
@@ -871,36 +882,36 @@ span {
 
 }
 
-.fifth-section .single-card h5 {
+.last-section .single-card h5 {
     color: #22264A;
     font-size: 14px;
     margin-bottom: 0 !important;
 }
 
-.fifth-section .name p {
+.last-section .name p {
     color: #808080;
     font-size: 10px;
     font-weight: 400;
 }
 
-.fifth-section .name {
+.last-section .name {
     padding-top: 10px;
     margin-right: 10px;
 }
 
-.fifth-section .single-card .profile .stars {
-    margin-right: 80px;
+.last-section .single-card .profile .stars {
+    margin-right: 140px;
     margin-top:8px;
   
 }
 
-.fifth-section .single-card .profile .stars i {
+.last-section .single-card .profile .stars i {
     width: 16px;
     height: 16px;
     color: #FFB800;
 
 }
-/* end fifth part */
+/* end last part */
 /* Start btn part */
 .btn{
     display: flex;
@@ -908,8 +919,8 @@ span {
     justify-content: space-between;
 }
 .btn .moveBtn{
-    width: 60px;
-height: 60px;
+    width: 48px;
+height: 48px;
 border-radius: 50%;
 background: #9A314F;
 display: flex;
@@ -924,14 +935,15 @@ transform: rotate(360deg);
    .whatsBtn
 {
     margin: 15px 0;
-    width: 60px;
-    height: 60px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     background-color: #29A71A;
     display: flex;
 justify-content: center;
 align-items: center;
 }
+
 
    /* end btn part */
 
@@ -1017,7 +1029,6 @@ footer .footer_sub .icons i {
     }
 
     .left-nav button {
-        background-color: #245D51;
         border: none;
         outline: none;
         font-weight: 700;
@@ -1032,14 +1043,19 @@ footer .footer_sub .icons i {
 
     .right-section p {
         font-size: 14px;
+        margin-top: -10px;
     }
 
     .right-section p,
     .right-section h2,
-    .right-section span {
+    .right-section  h2 .langSpan,
+    .right-section .main-p .name{
         text-align: center;
         font-size: 16px;
         width: 100%;
+    }
+    .right-section button{
+        margin-bottom: 60px;
     }
 
     .third-part {
@@ -1047,48 +1063,98 @@ footer .footer_sub .icons i {
         line-height: 2;
     }
 
-    .third-part .single-card {}
-
-    .third-part .first h2 {
-        font-size: 24px;
+    .third-part .first h2,
+    .third-part .first span,
+    .five-part .first h2,
+    .five-part .first span {
+        font-size: 24px !important;
     }
 
-    .third-part .first p {
+    .third-part .first p,
+    .five-part .first p {
         font-size: 16px;
+        font-weight: 500;
+        padding: 0 40px;
     }
 
-    .fourth-part .first-section {
+    /*          */
+    .five-part,.six-part,.seven-part,.eight-part{
+        margin-top: 32px;
+    }
+    .fourth-part .first-section,
+    .six-part .first-section,
+    .eight-part .first-section 
+     {
         justify-content: center;
     }
 
-    .fourth-part .first-section a {
+    .fourth-part .first-section a, 
+    .six-part .first-section a, 
+    .eight-part .first-section a {
         display: none;
     }
 
-    .fourth-part .first-section p {
+    .fourth-part .first-section p,
+    .six-part .first-section p, 
+    .eight-part .first-section p {
         padding-top: 15px;
-        font-size: 20px;
+        font-size: 18px;
+        font-weight: 600;
     }
+   
+    .seven-part .text{
+        position: unset;
+        background-image: url("../images/Frame.png");
+        background-position: 5px 10px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        display: flex;
+        flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border-radius: 16px;
+      padding: 10px;
 
-    .fifth-section .single-card,
-    .fourth-part .single-card,
-    .fourth-part .single-card .image {
-        width: 270px;
+    } 
+    .seven-part .text h3{
+        padding-top:40px;
+        color: #FCFCFC;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 800;
+    } 
+    .seven-part .text p{
+        color: #FCFCFC;
+        font-size: 16px;
+        font-weight: 400;
     }
+   
+    .seven-part .text button{
+        margin-top: 0px;
+        margin-bottom: 10px
+;    }
+
 
     .fourth-part .single-card h4 {
         margin-top: 0px;
     }
-    .fifth-section .single-card .quote p {
+    .last-section .single-card .quote p {
         font-size: 18px;
     }
-    .fifth-section .single-card,
-    .fourth-part .single-card {
+
+    .fourth-part .single-card,
+    .six-part .single-card,
+    .six-part .single-card .image,
+    .eight-part .single-card,
+    .eight-part .single-card .image,
+    .fourth-part .single-card .image   {
         align-items: center;
         margin: auto;
+        width: 250px;
     }
 
-    .fifth-section .single-card .quote {
+    .last-section .single-card .quote {
         font-size: 10px;
     }
 
@@ -1101,12 +1167,12 @@ footer .footer_sub .icons i {
         font-size: 20px;
     }
 
-    .fifth-section .first h2,
+    .last-section .first h2,
     span {
         font-size: 24px;
     }
 
-    .fifth-section .first p {
+    .last-section .first p {
         font-size: 16px;
     }
 
@@ -1127,8 +1193,8 @@ footer .footer_sub .icons i {
         font-size: 10px;
     }
 
-    .fifth-section .single-card .profile .stars {
-        margin-right: 20px;
+    .last-section .single-card .profile .stars {
+        margin-right: 25px;
     } 
 
 }
