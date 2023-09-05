@@ -18,11 +18,55 @@ document.addEventListener("click", function (event) {
     }
 });
 
-const sidebar =document.getElementById("sidebar");
-const listIocn =document.getElementById("list");
 
-listIocn.addEventListener("click", () => {
-    sidebar.style.display = (sidebar.style.display === "block") ? "none" : "block";
-    document.body.style.opacity = 0.5;
-    sidebar.style.opacity=1;
+document.addEventListener('DOMContentLoaded', function () {
+    const scrollButton = document.getElementById('moveBtn');
+
+    scrollButton.addEventListener('click', function () {
+        // Scroll to the bottom of the content
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0;
+    });
 });
+
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    $("#btn").addClass('show');
+  } else {
+    $("#btn").removeClass('show');
+  }
+});
+
+$("#btn").on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+// $(document).ready(function() {
+//     window.onscroll = function () {
+//         let height = $(window).scrollTop()
+//         let bacTopBtn = $("#moveBtn")
+//         if(height > 4400){
+//             $(bacTopBtn).css({background: "#fff"})
+//         }else{
+//             $(bacTopBtn).css({background: "#9A314F"})
+//         }
+//     }
+// });
+
+
+
+
+
+
+
+
+// const sidebar =document.getElementById("sidebar");
+// const listIocn =document.getElementById("list");
+
+// listIocn.addEventListener("click", () => {
+//     sidebar.style.display = (sidebar.style.display === "block") ? "none" : "block";
+//     document.body.style.opacity = 0.5;
+//     sidebar.style.opacity=1;
+// });

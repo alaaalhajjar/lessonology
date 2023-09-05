@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Your other HTML and CSS goes here -->
+    <style>
+        /* Sidebar styling */
+.sidebar {
+    width: 250px; /* Set the desired width for your sidebar */
+    background-color: #333; /* Background color for the sidebar */
+    color: #fff; /* Text color */
+    padding: 20px; /* Add padding to the sidebar content */
+    position: fixed; /* Fixed position to keep the sidebar in view */
+    top: 0;
+    left: 0;
+    height: 100%; /* Full height of the viewport */
+}
+
+/* Style the links or items inside the sidebar */
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0; /* Adjust padding to space the links */
+}
+
+/* Main content area */
+.main-content {
+    margin-left: 250px; /* Match the width of the sidebar to create space for it */
+    padding: 20px; /* Add padding to the main content area */
+}
+
+    </style>
+</head>
+<body>
+    <!-- Button to control the sidebar -->
+    <button id="toggleSidebarButton">Toggle Sidebar</button>
+
+
+    <div class="main-content">
+        <!-- Main content goes here -->
+    </div>
+
+    <!-- Your other HTML content continues here -->
+
+    <script src="">
+        // Function to toggle the sidebar when the button is clicked
+function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    sidebar.classList.toggle('active'); // Add or remove the 'active' class to toggle visibility
+}
+
+// Attach a click event listener to the button
+document.getElementById('toggleSidebarButton').addEventListener('click', toggleSidebar);
+
+    </script> <!-- Include JavaScript file -->
+</body>
+</html>

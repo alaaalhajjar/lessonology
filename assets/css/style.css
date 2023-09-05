@@ -34,7 +34,6 @@ body {
 }
 
 .sidebar ul li {
-    padding: 10px;
     text-align: center;
 }
 
@@ -50,7 +49,7 @@ body {
 
 .navbar .navbar-nav .nav-link {
     color: white;
-    padding-left: 32px;
+    padding-left: 15px;
 }
 .navbar .navbar-toggler i{
     color: white;
@@ -66,7 +65,7 @@ body {
 }
 .collapse .navbar-nav .nav-item a{
     position: relative;
-    font-size: 16px;
+    font-size: 14px;
     color: #F1F1F1;
 }
 .collapse .navbar-nav .nav-item :active a{
@@ -76,7 +75,7 @@ body {
     .collapse .navbar-nav .nav-item-page a:focus::after{
         content:"";
         display: block;
-        width: 26px;
+        width: 20px;
         height: 4px;
         position: absolute;
         top: 50;
@@ -100,6 +99,7 @@ body {
     position: relative;
     top: -7px;
 }
+
 .left-nav   img{
     height: 24px;
     width: 24px;
@@ -109,12 +109,11 @@ body {
     background-color: #E16F3D;
     color: white;
     height: 56px;
-    width: 128px;
+    width: 120px;
     outline: none;
-    font-size: 18px;
+    font-size: 14px;
     font-weight:bold;
-    border: 0;
-    
+    border: 0;  
 }
 
 .left-nav button:hover,
@@ -354,7 +353,7 @@ font-size: 40px;
     text-align: right;
     font-size: 24px;
     margin-right: 10px;
-    margin-top: 20px;
+    padding-top:20px;
 }
 
 .fourth-part .single-card p {
@@ -548,8 +547,7 @@ font-size: 40px;
     text-align: right;
     font-size: 24px;
     margin-right: 10px;
-    margin-top: 20px;
-    width: 237px;
+    padding-top: 20px;
 }
 
 .six-part .single-card p {
@@ -726,8 +724,7 @@ margin-top:40px;
     text-align: right;
     font-size: 24px;
     margin-right: 10px;
-    margin-top: 20px;
-    width: 237px;
+    padding-top: 20px;
 }
 
 .eight-part .single-card p {
@@ -913,24 +910,36 @@ span {
 }
 /* end last part */
 /* Start btn part */
-.btn{
+#btn{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    z-index: 1000;
+    visibility: hidden;
+    /* transition: transform 0.3s ease-in-out; */   
 }
+#btn.show {
+    opacity: 1;
+    visibility: visible;
+  }
 .btn .moveBtn{
-    width: 48px;
+width: 48px;
 height: 48px;
 border-radius: 50%;
 background: #9A314F;
 display: flex;
 justify-content: center;
 align-items: center;
-
 }
    #moveBtn{
    
 transform: rotate(360deg);
+
    }
    .whatsBtn
 {
@@ -1136,8 +1145,8 @@ footer .footer_sub .icons i {
 ;    }
 
 
-    .fourth-part .single-card h4 {
-        margin-top: 0px;
+    .last-section{
+        margin-top: 32px;
     }
     .last-section .single-card .quote p {
         font-size: 18px;
@@ -1151,9 +1160,9 @@ footer .footer_sub .icons i {
     .fourth-part .single-card .image   {
         align-items: center;
         margin: auto;
-        width: 250px;
+        width: 100%;
     }
-
+  
     .last-section .single-card .quote {
         font-size: 10px;
     }
