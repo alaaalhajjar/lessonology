@@ -31,7 +31,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
         <div class="container">
         <img src="assets/images/lesson logo.svg" class="navbar-brand logo "alt="">
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+            <button class="navbar-toggler collapsed mt-3 " type="button" data-bs-toggle="collapse"
                aria-expanded="false"
                 aria-label="Toggle navigation">
                 <i class="fa-solid fa-bars " id="list"></i>
@@ -62,10 +62,10 @@
     
             </aside>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="right-nav">
+                <div class="right-nav hiden">
                 <ul class="navbar-nav  mb-2 mb-lg-0">
-                    <li class="nav-item nav-item-page">
-                        <a class="nav-link hiden" href="#">الصفحة الرئيسية</a>
+                    <li class="nav-item nav-item-page link-active">
+                        <a class="nav-link " href="#">الصفحة الرئيسية</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
@@ -84,7 +84,7 @@
                 </ul>
             </div>
                 <div class="left-nav" >
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav" id="leftNav">
                         <li class="nav-item search-icon">
                             <div class="search-container">
                             <div class="search-box"  id="search-box" >
@@ -97,7 +97,7 @@
                         <li class="nav-item search-icon">
                             <a class="nav-link p-lg-3 " href="#"><img src="assets/images/cart.svg" alt=""></a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item  hiden">
                             <a class="nav-link p-lg-3" href="#">تسجيل الدخول </a>
                         </li>
                         <li class="nav-item">
@@ -108,15 +108,15 @@
             </div>
         </div>
     </nav>
-    <section>
-        <div class="right-section">
-            <div class=" container bg pt-lg-3 ps-lg-5  ">
+    <section class="right-section">
+        <div class="bg">
+            <div class="container">
                 <p class="first-p">إبدأ دورتك المفضلة</p>
                 <h2>تعلم اللغة  <span class="langSpan">الإنجليزية</span>  <br class="d-none d-lg-block">من أي مكان, وفي أي وقت,<br class="d-none d-lg-block"> بأسعار تنافسية.</h2>
                 <p class="main-p">من خلال برامج صممت خصيصاً لتناسب احتياجك, مع
                     <span class="name">أ. أمجاد الأحمد</span>
                 </p>
-                <button>
+                <button >
                     إبدأ الآن
                 </button>
             </div>
@@ -795,7 +795,7 @@
     </section>
     <footer class="footer-tag">
         <div class="container footer-flex">
-        <div class="d-none d-lg-block"><img src="assets/images/lesson logo.svg" class="navbar-brand logo "alt=""></div>
+        <div class="d-none d-lg-block logo"><img src="assets/images/lesson logo.svg" class="navbar-brand "alt=""></div>
             <div class="row py-5" id="main_footer">
                 <p >تصفح الموقع</p>
                 
@@ -829,7 +829,9 @@
        </div>
 
         
-       <div class="container"><hr></div> 
+       <div class="container">
+            <hr class="hr">
+        </div> 
         <div class="container footer_sub">
             
             <p> جميع الحقوق محفوظة لصالح لسن &COPY; 2023</p>
@@ -858,9 +860,7 @@
             margin: 40,
             nav: false,
             dots:false,
-            // autoplay:true,
-            // autoplayTimeout:2000,
-            // autoplayHoverPause:true,
+    
             responsive: {
                0: {
                     items: 1
@@ -887,9 +887,9 @@
             margin: 40,
             nav: false,
             dots:false,
-            // autoplay:true,
-            // autoplayTimeout:2000,
-            // autoplayHoverPause:true,
+            autoplay:true,
+            autoplayTimeout:2000,
+            autoplayHoverPause:true,
             responsive: {
                0: {
                     items: 1

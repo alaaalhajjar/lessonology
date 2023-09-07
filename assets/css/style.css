@@ -52,6 +52,13 @@ body {
 .sidebar .menu {
     margin: 20px;
 }
+.sidebar .menu .dropdown-menu{
+    position:unset !important;
+    border: none;
+    background-color: #fff;
+    margin-right: 20px;
+    list-style-type:circle;
+}
 
 .sidebar .menu .menu-item {
     display: block;
@@ -93,6 +100,7 @@ body {
     position: relative;
     font-size: 14px;
     color: #F1F1F1;
+    padding-left: 32px;
 }
 .collapse .navbar-nav .nav-item :active a{
     color: #fff;
@@ -182,13 +190,14 @@ body {
 /* Start Second part style */
 .right-section {
     background-color: #9A314F;
-    width: 100%;
 }
 .right-section .bg{
-    background-image: url("../images/background.png");
+    background-image: url("../images/header.png");
+
     background-repeat: no-repeat;
-    position: relative;
     background-position: 100PX 40px;
+    background-size: auto 100%;
+
 
 }
 .right-section .first-p {
@@ -280,12 +289,13 @@ font-size: 40px;
     background: #fcfcfc;
     padding: 20px 38px;
     margin: auto;
+    border: 1px solid #F3F3F3;
 
 }
 
 .third-part .cards:hover {
     background: rgba(239, 131, 72, 0.16);
-    box-shadow: 10px 10px 5px #f3f3f3;
+    box-shadow: 5px 5px 5px #fffffff3;
     transform:scale(1.05);
 }
 
@@ -482,6 +492,7 @@ font-size: 40px;
     border-radius: 16px;
     margin: auto;
     border: 1px solid #F3F3F3;
+    margin-top: 32px;
 }
 
 .five-part .card-image {
@@ -499,7 +510,7 @@ font-size: 40px;
 
 .five-part .cards:hover {
     background:#9A314F14.8%;
-    box-shadow: 10px 10px 5px #f3f3f3;
+    box-shadow: 5px 5px 5px #fffffff3;
     transform:scale(1.05);
 }
 
@@ -858,7 +869,8 @@ span {
 }
 
 .last-section .single-card {
-    height:auto;
+    height:300px;
+    width: 350px;
     border-radius: 16px;
     background: #FCFCFC;
     position: relative;
@@ -933,6 +945,7 @@ span {
 
 .last-section .single-card .profile .stars {
     margin-top:8px;
+    margin-right: 70px;
 }
 
 .last-section .single-card .profile .stars i {
@@ -1032,8 +1045,9 @@ align-items: center;
     display: block;
     text-decoration: none;
     margin: 10px 0;
+    padding-top: 16px;
     line-height: 1.5;
-    color: #D3D3D3;
+    color: #fff;
     font-size: 16px;
     font-weight: 600;
 }
@@ -1044,20 +1058,24 @@ align-items: center;
 
 
 footer hr {
-    height: 3px;
+    height: 2px !important;
     color: white;
 }
-
+.footer-tag .logo{
+    width: 118px;
+    height: 100px;
+}
 footer .footer_sub {
     justify-content: space-between;
     font-size: 14px;
     color: white;
     display: flex;
-
+    padding-bottom: 40px;
+    padding-top:24px ;
 }
 
 footer .footer_sub p {
-    font-size: 16px;
+    font-size: 20px;
     color: white;
     font-weight: 700;
 }
@@ -1067,11 +1085,14 @@ footer .footer_sub .icons {
 }
 
 footer .footer_sub .icons i {
-    width: 30px;
-    height: 30px;
+   font-size: 30px;
+   padding-left: 20px;
 }
 
 @media (max-width: 450px){
+    .seven-part{
+        padding: 16px !important;
+    }
     .seven-part .text h3{
         font-size: 16;
     }
@@ -1079,13 +1100,21 @@ footer .footer_sub .icons i {
         font-size: 14px;
     }
     .sidebar {
-   
         left: -1000px;
     
     }
+    .sidebar .menu .menu-item {
+        font-size: 16px;
+        margin-right: 0px;
+    }
+    .last-section{
+        margin-top: 48px !important;
+        margin-bottom: 48px !important;
+    }
+
 }
 @media (max-width: 767px) {
-
+   
     #navbarSupportedContent{
         display: none;
     }
@@ -1233,13 +1262,16 @@ footer .footer_sub .icons i {
     .six-part .single-card .image,
     .eight-part .single-card,
     .eight-part .single-card .image,
-    .fourth-part .single-card .image,
-    .last-section .single-card  {
+    .fourth-part .single-card .image
+   
+    {
         align-items: center;
         margin: auto;
         width: 100%;
     }
-  
+    .last-section .single-card {
+        margin:auto;
+    }
     .last-section .single-card .quote {
         font-size: 10px;
     }
@@ -1282,19 +1314,47 @@ footer .footer_sub .icons i {
         width: 100%;
         font-size: 10px;
     }
-
-    .last-section .single-card .profile .stars {
-        margin-right: 25px;
-    } 
-    .fourth-part ,.five-part,.six-part,.seven-part,.eight-part{
-        margin-top: 64px;
-    }
+    
 }
 
 
 @media (min-width: 768px)and (max-width: 991px){
-    #navbarSupportedContent{
-display: none;
+    .right-nav, .hiden{
+        display: none;
+    }
+    .left-nav{
+        margin-top: -120px;
+    }
+    .left-nav .navbar-nav{
+        display: flex;
+        flex-direction: row !important;
+        margin-right: 400px;
+        justify-content: center;
+        position: fixed;
+    }
+    .left-nav .navbar-nav li{
+        padding-left: 20px;
+    }
+    .left-nav .navbar-nav .nav-item button{
+        height: 40px;
+    }
+    #search-box input {
+        width: 200px;
+        height: 32px;
+        padding: 10px;
+        transition-timing-function: ease-in-out;
+    }
+    .fourth-part ,.five-part,.six-part,.seven-part,.eight-part{
+        margin-top: 64px;
+    }
+ 
+    #search-box {
+        display: none;
+        margin-left: -35px;
+    }
+    .search-container {
+        display: flex;
+        align-items: center;
     }
     .right-section .bg{
         background-image: none;
@@ -1309,16 +1369,14 @@ display: none;
         height: 100vh;
         transition: 0.2s ease-in-out;
     }
-
     .sidebar.is-active {
         left: 0;
     }
-  
     .seven-part .text{
         position: absolute;
-        top: 70px;
+        top: 50px;
         width: 300px;
-        left: 3%;
+        left: 2%;
     }
     .seven-part .text h3{
         font-size: 24px;
@@ -1330,10 +1388,12 @@ display: none;
     }
     .seven-part .text button{
         margin-top: 0px;
+        height: 40px;
+        font-size: 14px;
+        width:90px;
+        margin-right: 50px;
     }
-    .fourth-part ,.five-part,.six-part,.seven-part,.eight-part{
-        margin-top: 64px;
-    }
+ 
     .last-section .single-card .profile .stars{
         margin-right: 50px;
     }
