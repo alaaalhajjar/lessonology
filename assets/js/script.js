@@ -82,20 +82,19 @@ $(document).ready(function() {
 			sidebar.style.display="none";
 		});
 
+        ///////Register page js ////////
 
 
+        //show password 
+        // function togglePasswordVisibility() {
+        //     var passwordField = document.getElementById("password");
+        //     var showPasswordButton = document.getElementById("showPasswordButton");
 
-
-
-
-
-
-
-// const sidebar =document.getElementById("sidebar");
-// const listIocn =document.getElementById("list");
-
-// listIocn.addEventListener("click", () => {
-//     sidebar.style.display = (sidebar.style.display === "block") ? "none" : "block";
-//     document.body.style.opacity = 0.5;
-//     sidebar.style.opacity=1;
-// });
+        //     if (passwordField.type === "password") {
+        //         passwordField.type = "text";
+        //         showPasswordButton.textContent = "Hide Password";
+        //     } else {
+        //         passwordField.type = "password";
+        //         showPasswordButton.textContent = "Show Password";
+        //     }
+        // }
