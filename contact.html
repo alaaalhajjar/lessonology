@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Render all element normally -->
+        <!-- <link rel="stylesheet" href="assets/css/normal.css"> -->
+        <!-- Main template CSS file  -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Bootstrap CSS -->
+        <link href="assets/vendor/bootstrap-5.1.0-dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;500&display=swap" rel="stylesheet">
+        <!-- Icon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+            integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--  rtl breadcrumb-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q" crossorigin="anonymous">
+    
+    
+        <link rel="stylesheet" href="assets/libs/owlcarousel/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/libs/owlcarousel/assets/owl.theme.default.min.css">
+        <link rel="shortcut icon" href="assets/images/shortcutLogo.svg" type="image/svg+xml">
+        <title>Document</title>
+    </head>
+<body> 
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container">
+        <img src="assets/images/lesson logo.svg" class="navbar-brand logo "alt="">
+            <button class="navbar-toggler collapsed mt-3 " type="button" data-bs-toggle="collapse"
+               aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars " id="list"></i>
+            </button>
+            
+            <aside class="sidebar d-lg-none">
+                
+                <div class="close-sidebar"><i class="fa-solid fa-xmark" style="color: #000000;"></i>
+                </div>
+                <nav class="menu">
+                    <ul class="menu-ul">
+                   <li> <a href="#" class="menu-item ">الصفحة الرئيسية</a></li>
+                    <li class="nav-item dropdown">
+                        <a class=" menu-item  nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            الفئات
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">الدورات</a></li>
+                            <li><a class="dropdown-item" href="#">الكتب</a></li>
+                            <li><a class="dropdown-item" href="#">المقالات</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="menu-item">تواصل معنا </a></li>
+                    <li><a href="#" class="menu-item">تسجيل الدخول</a></li>
+                </ul>
+                </nav>
+    
+            </aside>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="right-nav hiden">
+                <ul class="navbar-nav  mb-2 mb-lg-0">
+                    <li class="nav-item nav-item-page link-active">
+                        <a class="nav-link " href="#">الصفحة الرئيسية</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            الفئات
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">الدورات</a></li>
+                            <li><a class="dropdown-item" href="#">الكتب</a></li>
+                            <li><a class="dropdown-item" href="#">المقالات</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-item-page">
+                        <a class="nav-link hiden" href="#">تواصل معنا </a>
+                    </li>
+                </ul>
+            </div>
+                <div class="left-nav" >
+                    <ul class="navbar-nav" id="leftNav">
+                        <li class="nav-item search-icon">
+                            <div class="search-container">
+                            <div class="search-box"  id="search-box" >
+                                <input  id="search-input" type="text" placeholder="ابحث هنا">
+                            </div>
+                            <a class="nav-link p-lg-3 " href="#"><img id="search-icon" src="assets/images/search.svg" ></a>
+
+                            </div>
+                        </li>
+                        <li class="nav-item search-icon">
+                            <a class="nav-link p-lg-3 " href="#"><img src="assets/images/cart.svg" alt=""></a>
+                        </li>
+                        <li class="nav-item  hiden">
+                            <a class="nav-link p-lg-3" href="#">تسجيل الدخول </a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="p-lg-3"> اشتراك الآن</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="contactUs">
+        <div class="container">
+        <div class="row">
+        <div class="col-lg-4">
+<div class="contactDetailes">
+        <div class="Card">
+            <div> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                <circle cx="40" cy="40" r="40" fill="#E16F3D" fill-opacity="0.08"/>
+                <path d="M38.7337 43.9332L36.267 46.3998C35.747 46.9198 34.9203 46.9198 34.387 46.4132C34.2403 46.2665 34.0937 46.1332 33.947 45.9865C32.5737 44.5998 31.3337 43.1465 30.227 41.6265C29.1337 40.1065 28.2537 38.5865 27.6137 37.0798C26.987 35.5598 26.667 34.1065 26.667 32.7198C26.667 31.8132 26.827 30.9465 27.147 30.1465C27.467 29.3332 27.9737 28.5865 28.6803 27.9198C29.5337 27.0798 30.467 26.6665 31.4537 26.6665C31.827 26.6665 32.2003 26.7465 32.5337 26.9065C32.8803 27.0665 33.187 27.3065 33.427 27.6532L36.5203 32.0132C36.7603 32.3465 36.9337 32.6532 37.0537 32.9465C37.1737 33.2265 37.2403 33.5065 37.2403 33.7598C37.2403 34.0798 37.147 34.3998 36.9603 34.7065C36.787 35.0132 36.5337 35.3332 36.2137 35.6532L35.2003 36.7065C35.0537 36.8532 34.987 37.0265 34.987 37.2398C34.987 37.3465 35.0003 37.4398 35.027 37.5465C35.067 37.6532 35.107 37.7332 35.1337 37.8132C35.3737 38.2532 35.787 38.8265 36.3737 39.5198C36.9737 40.2132 37.6137 40.9198 38.307 41.6265C38.4403 41.7598 38.587 41.8932 38.7203 42.0265C39.2537 42.5465 39.267 43.3998 38.7337 43.9332Z" fill="#E16F3D"/>
+                <path d="M53.2931 48.4397C53.2931 48.8131 53.2265 49.1997 53.0931 49.5731C53.0531 49.6797 53.0131 49.7864 52.9598 49.8931C52.7331 50.3731 52.4398 50.8264 52.0531 51.2531C51.3998 51.9731 50.6798 52.4931 49.8665 52.8264C49.8531 52.8264 49.8398 52.8397 49.8265 52.8397C49.0398 53.1597 48.1865 53.3331 47.2665 53.3331C45.9065 53.3331 44.4531 53.0131 42.9198 52.3597C41.3865 51.7064 39.8531 50.8264 38.3331 49.7197C37.8131 49.3331 37.2931 48.9464 36.7998 48.5331L41.1598 44.1731C41.5331 44.4531 41.8665 44.6664 42.1465 44.8131C42.2131 44.8397 42.2931 44.8797 42.3865 44.9197C42.4931 44.9597 42.5998 44.9731 42.7198 44.9731C42.9465 44.9731 43.1198 44.8931 43.2665 44.7464L44.2798 43.7464C44.6131 43.4131 44.9331 43.1597 45.2398 42.9997C45.5465 42.8131 45.8531 42.7197 46.1865 42.7197C46.4398 42.7197 46.7065 42.7731 46.9998 42.8931C47.2931 43.0131 47.5998 43.1864 47.9331 43.4131L52.3465 46.5464C52.6931 46.7864 52.9331 47.0664 53.0798 47.3997C53.2131 47.7331 53.2931 48.0664 53.2931 48.4397Z" fill="#E16F3D"/>
+                </svg>
+            </div>
+                <ul>
+                    <li class="phone">رقم الهاتف</li>
+                    <li class="phoneNum">+966 593282586</li>
+                </ul>
+        </div>
+        <div class="Card">
+            <div> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                    <g clip-path="url(#clip0_443_475)">
+                    <path d="M40 80C62.0914 80 80 62.0914 80 40C80 17.9086 62.0914 0 40 0C17.9086 0 0 17.9086 0 40C0 62.0914 17.9086 80 40 80Z" fill="#E16F3D" fill-opacity="0.08"/>
+                    <path d="M46.667 28.6665H33.3337C29.3337 28.6665 26.667 30.6665 26.667 35.3332V44.6665C26.667 49.3332 29.3337 51.3332 33.3337 51.3332H46.667C50.667 51.3332 53.3337 49.3332 53.3337 44.6665V35.3332C53.3337 30.6665 50.667 28.6665 46.667 28.6665ZM47.2937 36.7865L43.1203 40.1198C42.2403 40.8265 41.1203 41.1732 40.0003 41.1732C38.8803 41.1732 37.747 40.8265 36.8803 40.1198L32.707 36.7865C32.2803 36.4398 32.2137 35.7998 32.547 35.3732C32.8937 34.9465 33.5203 34.8665 33.947 35.2132L38.1203 38.5465C39.1337 39.3598 40.8537 39.3598 41.867 38.5465L46.0403 35.2132C46.467 34.8665 47.107 34.9332 47.4403 35.3732C47.787 35.7998 47.7203 36.4398 47.2937 36.7865Z" fill="#E16F3D"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_443_475">
+                    <rect width="80" height="80" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+            </div>
+                <ul>
+                    <li class="emailAddress"> البريد الإلكتروني</li>
+                    <li class="email">lessonology@gmail.com</li>
+                </ul>
+        </div>
+        <div class="Card">
+            <div> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                <circle cx="40" cy="40" r="40" fill="#E16F3D" fill-opacity="0.08"/>
+                <path d="M38.7337 43.9332L36.267 46.3998C35.747 46.9198 34.9203 46.9198 34.387 46.4132C34.2403 46.2665 34.0937 46.1332 33.947 45.9865C32.5737 44.5998 31.3337 43.1465 30.227 41.6265C29.1337 40.1065 28.2537 38.5865 27.6137 37.0798C26.987 35.5598 26.667 34.1065 26.667 32.7198C26.667 31.8132 26.827 30.9465 27.147 30.1465C27.467 29.3332 27.9737 28.5865 28.6803 27.9198C29.5337 27.0798 30.467 26.6665 31.4537 26.6665C31.827 26.6665 32.2003 26.7465 32.5337 26.9065C32.8803 27.0665 33.187 27.3065 33.427 27.6532L36.5203 32.0132C36.7603 32.3465 36.9337 32.6532 37.0537 32.9465C37.1737 33.2265 37.2403 33.5065 37.2403 33.7598C37.2403 34.0798 37.147 34.3998 36.9603 34.7065C36.787 35.0132 36.5337 35.3332 36.2137 35.6532L35.2003 36.7065C35.0537 36.8532 34.987 37.0265 34.987 37.2398C34.987 37.3465 35.0003 37.4398 35.027 37.5465C35.067 37.6532 35.107 37.7332 35.1337 37.8132C35.3737 38.2532 35.787 38.8265 36.3737 39.5198C36.9737 40.2132 37.6137 40.9198 38.307 41.6265C38.4403 41.7598 38.587 41.8932 38.7203 42.0265C39.2537 42.5465 39.267 43.3998 38.7337 43.9332Z" fill="#E16F3D"/>
+                <path d="M53.2931 48.4397C53.2931 48.8131 53.2265 49.1997 53.0931 49.5731C53.0531 49.6797 53.0131 49.7864 52.9598 49.8931C52.7331 50.3731 52.4398 50.8264 52.0531 51.2531C51.3998 51.9731 50.6798 52.4931 49.8665 52.8264C49.8531 52.8264 49.8398 52.8397 49.8265 52.8397C49.0398 53.1597 48.1865 53.3331 47.2665 53.3331C45.9065 53.3331 44.4531 53.0131 42.9198 52.3597C41.3865 51.7064 39.8531 50.8264 38.3331 49.7197C37.8131 49.3331 37.2931 48.9464 36.7998 48.5331L41.1598 44.1731C41.5331 44.4531 41.8665 44.6664 42.1465 44.8131C42.2131 44.8397 42.2931 44.8797 42.3865 44.9197C42.4931 44.9597 42.5998 44.9731 42.7198 44.9731C42.9465 44.9731 43.1198 44.8931 43.2665 44.7464L44.2798 43.7464C44.6131 43.4131 44.9331 43.1597 45.2398 42.9997C45.5465 42.8131 45.8531 42.7197 46.1865 42.7197C46.4398 42.7197 46.7065 42.7731 46.9998 42.8931C47.2931 43.0131 47.5998 43.1864 47.9331 43.4131L52.3465 46.5464C52.6931 46.7864 52.9331 47.0664 53.0798 47.3997C53.2131 47.7331 53.2931 48.0664 53.2931 48.4397Z" fill="#E16F3D"/>
+                </svg>
+            </div>
+                <ul>
+                    <li class="phax">رقم الفاكس</li>
+                    <li class="phaxNum">+966 593282586</li>
+                </ul>
+        </div>
+        <div class="Card">
+            <div> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+                    <g clip-path="url(#clip0_443_485)">
+                      <path d="M40 80C62.0914 80 80 62.0914 80 40C80 17.9086 62.0914 0 40 0C17.9086 0 0 17.9086 0 40C0 62.0914 17.9086 80 40 80Z" fill="#E16F3D" fill-opacity="0.08"/>
+                      <mask id="mask0_443_485" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="24" y="24" width="32" height="32">
+                        <path d="M56 24H24V56H56V24Z" fill="white"/>
+                      </mask>
+                      <g mask="url(#mask0_443_485)">
+                        <path d="M51.4935 35.2668C50.0935 29.1068 44.7201 26.3335 40.0001 26.3335C40.0001 26.3335 40.0001 26.3335 39.9868 26.3335C35.2801 26.3335 29.8935 29.0935 28.4935 35.2535C26.9335 42.1335 31.1468 47.9602 34.9601 51.6268C36.3735 52.9868 38.1868 53.6668 40.0001 53.6668C41.8135 53.6668 43.6268 52.9868 45.0268 51.6268C48.8401 47.9602 53.0535 42.1468 51.4935 35.2668ZM40.0001 41.9468C37.6801 41.9468 35.8001 40.0668 35.8001 37.7468C35.8001 35.4268 37.6801 33.5468 40.0001 33.5468C42.3201 33.5468 44.2001 35.4268 44.2001 37.7468C44.2001 40.0668 42.3201 41.9468 40.0001 41.9468Z" fill="#E16F3D"/>
+                      </g>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_443_485">
+                        <rect width="80" height="80" fill="white"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+            </div>
+                <ul>
+                    <li class="address"> الموقع</li>
+                    <li class="addressDetail">123 شارع الأمير سلطان، حي العزيزية
+                    </li>
+                </ul>
+        </div>
+    </div>
+        </div>
+    <div class="col-lg-8">
+       <div class="contavtForm">
+            <h3> إرسال رسالة</h3>
+            <p>الرجاء تعبئة الحقول التالية لكي تتمكن من التواصل معنا وإرسال رسالتك </p>
+            <form action="">
+            <div class="row">
+               <div class="col-12 col-lg-6"> 
+                  <label for="fname"> الإسم
+                  </label> <br>
+                <input type="text" name="fname" id="fname" placeholder="الرجاء إدخال إسمك"><br>
+                <label for="email"> البريد الإلكتروني
+                </label><br>
+                <input type="email"  name="email" id="email"  placeholder="الرجاء إدخال البريد الإلكتروني" style="text-align: right;">
+
+                </div> 
+             <div class="col-12 col-lg-6"> 
+                <label for="mobile"> رقم الهاتف
+                </label><br>
+                <input type="text" name="mobile" id="mobile"  placeholder="الرجاء إدخال رقم الهاتف"> <br>
+                <label for=""> عنوان الرسالة
+                </label><br>
+                <input type="text" placeholder="الرجاء إدخال عنوان الرسالة">
+            </div>
+            </div>
+               
+    <div class="row">   
+        <div class="col-12">
+            <label for=" comment"> الرسالة</label>
+            <div class="comment btm-20">
+                <textarea id="comment" name="message" rows="5" placeholder="{{ __('Your Message')}}"></textarea>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="contact-form-btn">
+        <button type="submit" class="" title="Send Message">{{ __('Message') }}</button>
+
+    </div>
+     </form>
+       </div>
+    </div>
+</div>
+</div>
+</section>
+<footer class="footer-tag">
+    <div class="container footer-flex">
+    <div class="d-none d-lg-block logo"><img src="assets/images/lesson logo.svg" class="navbar-brand "alt=""></div>
+        <div class="row py-5" id="main_footer">
+            <p >تصفح الموقع</p>
+            
+            <div class="col-6 col-md tag">
+                <ul class="list-unstyled">
+                    <li class="mb-3"><a href="#">الرئيسية</a></li>
+                    <li class="mb-3"><a href="#">من نحن</a></li>
+                    <li class="mb-3"><a href="#">الباقات والعروض </a></li>
+                    <li class="mb-3"><a href="#">تواصل معنا</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md tag">
+                <ul class="list-unstyled">
+                    <li class="mb-3"><a href="#">كن مدرساً</a></li>
+                    <li class="mb-3"><a href="#">خدماتنا</a></li>
+                    <li class="mb-3"><a href="#">مميزاتنا</a></li>
+
+                </ul>
+            </div>
+            
+        
+            <div class="col-6 col-md tag">
+                <ul class="list-unstyled">
+                    <li class="mb-3"><a href="#">وظائف</a> </li>
+                    <li class="mb-3"><a href="#">مدونة</a> </li>
+                    <li class="mb-3"><a href="#">مساعدة</a> </li>
+                </ul>
+            </div>
+            
+        </div>
+   </div>
+
+    
+   <div class="container">
+        <hr class="hr">
+    </div> 
+    <div class="container footer_sub">
+        
+        <p> جميع الحقوق محفوظة لصالح لسن &COPY; 2023</p>
+        <div class="icons">
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+    </div>
+    </div>
+
+</footer>
+</body>
+</html>

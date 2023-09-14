@@ -6,22 +6,23 @@ const windowWidth = window.innerWidth;
 
 searchIcon.addEventListener("click", () => {
     searchBox.style.display = (searchBox.style.display === "block") ? "none" : "block";
-    (searchBox.style.display === "block") ?  searchIcon.src = "assets/images/colorSearch.svg"  :  searchIcon.src = "assets/images/search.svg" ;
-    if ((windowWidth >767 && windowWidth< 992) &&(searchBox.style.display === "block")){
-        leftnav.style.marginRight = "235px";
-    }else if((windowWidth >767 && windowWidth< 992) &&(searchBox.style.display === "none")){
-        leftnav.style.marginRight = "400px";
+    (searchBox.style.display === "block") ?  searchIcon.src = "assets/images/colorSearch.svg": searchIcon.src = "assets/images/search.svg" ;
+    if ((windowWidth > 767 && windowWidth< 992) &&(searchBox.style.display === "block")){
+        document.getElementById("leftNav").style.marginRight = "235px";
+    }else if((windowWidth > 767 && windowWidth< 992) &&(searchBox.style.display === "none")){
+        document.getElementById("leftNav").style.marginRight = "400px";
     }
 });
 
 document.addEventListener("click", function (event) {
     // Check if the clicked element is not the searchBox or search icon
-    if (event.target !== searchInput && event.target !== searchIcon) {
-        searchBox.style.display = "none";
+    if (event.target !== searchInput && event.target !== searchIcon && (searchBox.style.display ==="block")){
+       { searchBox.style.display = "none";
         searchIcon.src = "assets/images/search.svg" ;
+       }
         if((windowWidth >767 && windowWidth< 992) &&(searchBox.style.display === "none")){
-        leftnav.style.marginRight = "400px";
-    }
+            document.getElementById("leftNav").style.marginRight = "350px";
+        }
 }
 });
 
@@ -98,3 +99,24 @@ $(document).ready(function() {
         //         showPasswordButton.textContent = "Show Password";
         //     }
         // }
+ const togglePassword = document.querySelector('#eye');
+  const password = document.querySelector('#userPassword');
+
+  togglePassword.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    // toggle the eye slash icon
+    this.classList.toggle('fa-eye-slash');
+});
+
+
+const togglelginPassword = document.querySelector('#logineye');
+const loginpassword = document.querySelector('#Password');
+togglelginPassword.addEventListener('click', function (e) {
+  // toggle the type attribute
+  const type = loginpassword.getAttribute('type') === 'password' ? 'text' : 'password';
+  loginpassword.setAttribute('type', type);
+  // toggle the eye slash icon
+  this.classList.toggle('fa-eye-slash');
+});
